@@ -1,0 +1,18 @@
+{% extends 'webku/beranda.html' %}
+{% load static %}
+{% block title %}Gallery{% endblock %}
+{% block content %}
+<h3>Gallery Kegiatan</h3>
+<div class="row mt-4">
+  <div class="col-md-4">
+    <div class="card shadow-sm">
+      <img src="{% static 'images/osjur.jpeg' %}" class="card-img-top" alt="Kegiatan 1">
+      <img src="{% static 'images/mentoring.jpeg' %}" class="card-img-top" alt="Kegiatan 2">
+      <img src="{% static 'images/kegiatan marching band.jpeg' %}" class="card-img-top" alt="Kegiatan 3">
+      <div class="card-body">
+        <p class="card-text">Gallery</p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
